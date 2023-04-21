@@ -1,11 +1,16 @@
 <div class="main">
-    <div class="left-container"></div>
-    <div class="right-container">
-        <div class="top-part">
-            <div class="logo">
-                <img src="/segment/src/assets/logo.PNG" alt="segment" id="logo">
-            </div>
-            <p id="header">Добро пожаловать!</p>
+    <div class="design">
+        <div class="image">
+            <img src="/segment/src/assets/image.png" alt="">
         </div>
+    </div>
+    <div class="login">
+        <h2>SEGMENT</h2>
+        <form id="form" (ngSubmit)="onSubmit()">
+            <i class="bi bi-person"></i>
+            <input type="text" id="username" placeholder="Username" name="username" [(ngModel)]="username">
+            <input type="password" id="password" placeholder="Password" name="password" [(ngModel)]="password">
+            <button type="submit">Sign In</button>
+        </form>
     </div>
 </div>
