@@ -1,8 +1,9 @@
 # project work
-# goal
+## goal
 Creating a simple website for a clothing store
----
--registration page
--login page
--home page
--product page
+<ul>
+  <li>registration page</li>
+  <li>login page</li>
+  <li>home page</li>
+  <li>product page</li>
+</ul>
