@@ -11,7 +11,7 @@
     margin: auto;
     border: 1px solid #ccc;
     border-radius: 1rem;
-    padding: 5rem 1rem;
+    padding: 4rem 1rem;
     background: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -31,6 +31,10 @@ form *{
     font-weight: 550;
     font-size: 1rem;
     color: #fff;
+    transition: .3s ease;
+}
+.btn:hover {
+    background: #784ba0;
 }
 .user {
     display: inline-block;
@@ -62,3 +66,21 @@ label {
     display: block;
     margin-left: 1.4rem;
 }
+hr {
+    display: block;
+    width: 75%;
+    height: .5px;
+    background-color: #00000053;
+    margin: 2rem auto;
+}
+.link {
+    text-align: center;
+}
+#reg-link {
+    text-decoration: none;
+    transition: .3s ease;
+}
+#reg-link:hover {
+    color: #784ba0;
+}
+  
