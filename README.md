@@ -1,3 +1,3 @@
 # project work
-#goal
+# goal
 Creating a simple website for a clothing store
