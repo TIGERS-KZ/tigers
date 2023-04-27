@@ -1,10 +1,13 @@
 <div class="main">
     <form id="form" (ngSubmit)="onSubmit()">
         <div class="user">
+            <label for="username">Username</label>
             <i class="bi bi-person"></i>
             <input type="text" id="username" placeholder="Username" name="username" [(ngModel)]="username">
         </div>
         <div class="pass">
+            <label for="password">Password</label>
+            <i class="bi bi-lock"></i>
             <input type="password" id="password" placeholder="Password" name="password" [(ngModel)]="password">
         </div>
         <button class="btn" type="submit">Sign In</button>
