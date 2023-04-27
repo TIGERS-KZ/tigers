@@ -1,13 +1,17 @@
 <div class="main">
-    <form id="form" (ngSubmit)="onSubmit()">
-        <img src="./logo.PNG" alt="segment">
-        <p for="username">Username:</p>
-        <input type="text" id="username" name="username" [(ngModel)]="username">
-
-        <p for="password">Password:</p>
-        <input type="password" id="password" name="password" [(ngModel)]="password">
-
-        <button class="btn"type="submit">Sign In</button>
-    </form>
+    <div class="design">
+        <div class="image">
+            <img src="/segment/src/assets/image.png" alt="">
+        </div>
+    </div>
+    <div class="login">
+        <h2>SEGMENT</h2>
+        <form id="form" (ngSubmit)="onSubmit()">
+            <i class="bi bi-person"></i>
+            <input type="text" id="username" placeholder="Username" name="username" [(ngModel)]="username">
+            <input type="password" id="password" placeholder="Password" name="password" [(ngModel)]="password">
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
 </div>
   
