@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../models/user';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +11,21 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
-  signIn(username: string, password: string) {
-    const credentials = { username, password };
+  currentUser: any;
+
+  setCurrentUser(user: any) {
+    this.currentUser = user;
+    localStorage.setItem('currentUser', JSON.stringify(user));
+  }
+
+  getCurrentUser(): User {
+    return this.currentUser;
+  }
+
+  authenticateUser(credentials: any): Observable<any> {
     return this.http.post(this.signInUrl, credentials);
   }
+
   register(user: User) {
     return this.http.post('http://api.example.com/register', user);
   }

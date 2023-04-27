@@ -13,6 +13,14 @@ export class SigninComponent {
   constructor(private authService: AuthService) {}
 
   onSubmit() {
-    this.authService.signIn(this.username, this.password);
+    this.authService.authenticateUser([this.username, this.password]).subscribe(
+      (response) => {
+        // Set the currentUser object
+        this.authService.setCurrentUser(response.user);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 }

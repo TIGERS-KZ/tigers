@@ -24,4 +24,11 @@
             </nav>
         </div>
     </header>
+    <div class="product-grid">
+        <div class="product-card" *ngFor="let product of products">
+          <h3>{{ product.name }}</h3>
+          <p>Price: {{ product.price }}</p>
+          <button (click)="addToCart(productId, quantity)">Add to Cart</button>
+        </div>
+    </div>
 </div>

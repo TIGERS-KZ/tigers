@@ -11,14 +11,13 @@ export class SignupComponent {
   username: string = '';
   email: string = '';
   password: string = '';
-  user: User = new UserImpl(this.username, this.password, this.email);
 
   constructor(private authService: AuthService) {}
   
   onSubmit() {
     console.log("Username: ${this.username}, Email: ${this.email}, Password: ${this.password}");
   
-    this.authService.register(this.user);
+    this.authService.register(new UserImpl(this.username, this.password, this.email));
     
   }
 }

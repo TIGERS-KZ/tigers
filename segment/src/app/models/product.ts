@@ -3,10 +3,10 @@ export interface Product {
     name: string;
     description: string;
     price: Number;
-    type: ProductType;
+    category: ProductCategory;
 }
 
-export enum ProductType {
+export enum ProductCategory {
     WOMEN = 'Women',
     MEN = 'Men',
     CHILDREN = 'Children'
