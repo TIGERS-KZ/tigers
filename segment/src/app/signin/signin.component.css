@@ -4,19 +4,19 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #FAEDCD;
+    background: #985ACE;
 }
 #form {
     display: block;
     margin: auto;
     border: 1px solid #ccc;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 5rem 1rem;
     background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 form *{
     font-family: 'Poppins',sans-serif;
-    color: #000;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
@@ -24,34 +24,41 @@ form *{
 .btn {
     display: block;
     margin: .5rem auto;
-    padding: .5rem 4rem;
+    padding: .6rem 8rem;
     border-radius: .5rem;
     border: none;
-    background: #FAEDCD;
-    font-weight: 700;
+    background: #985ACE;
+    font-weight: 550;
     font-size: 1rem;
+    color: #fff;
 }
 .user {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+.pass {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
 }
 .bi.bi-person {
     display: inline;
-    margin-right: .3rem;
+    margin-right: .5rem;
 }
 .bi.bi-lock {
     align-items: center;
-    margin-right: .3rem;
+    margin-right: .5rem;
 }
 input {
-    margin: .5rem auto;
-    padding: .5rem;
+    margin: .5rem 3rem .5rem 0;
+    padding: .5rem 3rem .5rem .5rem;
     border-radius: .5rem;
     border: none;
-    background: #faedcd59;
+    background: #F8F1FF;
+    font-size: 1.25rem;
 }
 label {
     display: block;
-    font-weight: 525;
     margin-left: 1.4rem;
 }
