@@ -7,4 +7,4 @@ Creating a simple website for a clothing store
   <li>home page</li>
   <li>product page</li>
 </ul>
-![Hello](https://github.com/TIGERS-KZ/tigers/blob/main/Снимок%20экрана%202023-04-28%20в%2003.12.43.png)
+![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/Снимок%20экрана%202023-04-28%20в%2003.12.43.png?raw=true)
