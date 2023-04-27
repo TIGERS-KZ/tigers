@@ -8,4 +8,6 @@ Creating a simple website for a clothing store
   <li>product page</li>
 </ul>
 
+<summary>Registration page</summary>
+
 ![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/Снимок%20экрана%202023-04-28%20в%2003.12.43.png?raw=true)
