@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../auth.service';
-import { User, UserImpl } from '../user';
+import { AuthService } from '../service/auth.service';
+import { User, UserImpl } from '../models/user';
 
 @Component({
   selector: 'app-signup',
