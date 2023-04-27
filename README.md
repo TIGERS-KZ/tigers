@@ -11,7 +11,7 @@ Creating a simple website for a clothing store
 
   <summary>Registration page</summary>
 
-  <img src="https://github.com/TIGERS-KZ/tigers/blob/main/register.png" alt="alt text" width=900px height="height in pixels">
+  <img src="https://github.com/TIGERS-KZ/tigers/blob/main/register.png" alt="alt text" width=600px height="height in pixels">
 
  </details>
  
