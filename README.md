@@ -8,13 +8,20 @@ Creating a simple website for a clothing store
 </ul>
 
 <details>
+
   <summary>Registration page</summary>
-  ![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/login.png)
-</details>
+
+  <img src="https://github.com/TIGERS-KZ/tigers/blob/main/register.png" alt="alt text" width=750px height="height in pixels">
+
+ </details>
  
 <details>
+
   <summary>Login page</summary>
-  ![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/login.png)
+  
+  <img src="https://github.com/TIGERS-KZ/tigers/blob/main/login.png" alt="alt text" width=750px height="height in pixels">
+
+
 </details>
   
  
