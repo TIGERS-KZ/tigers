@@ -9,12 +9,12 @@ Creating a simple website for a clothing store
 
 <details>
   <summary>Registration page</summary>
-  ![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/register.png?raw=true)
+  ![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/register.png)
 </details>
  
 <details>
   <summary>Login page</summary>
-  ![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/login.png?raw=true)
+  ![alt text](https://github.com/TIGERS-KZ/tigers/blob/main/login.png)
 </details>
   
  
