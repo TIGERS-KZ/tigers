@@ -19,7 +19,7 @@ Creating a simple website for a clothing store
 
   <summary>Login page</summary>
   
-    <img src="https://github.com/TIGERS-KZ/tigers/blob/main/login.png" alt="alt text" width=600px height="height in pixels">
+  <img src="https://github.com/TIGERS-KZ/tigers/blob/main/login.png" alt="alt text" width=600px height="height in pixels">
 
 
 </details>
