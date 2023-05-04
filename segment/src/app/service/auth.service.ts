@@ -9,7 +9,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   providedIn: 'root'
 })
 export class AuthService {
-  private signInUrl = '/api/signin';
+  private signInUrl = '/api/login';
 
   constructor(private http: HttpClient) {}
 
@@ -29,6 +29,6 @@ export class AuthService {
   }
 
   register(user: User) {
-    return this.http.post('http://api.example.com/register', user);
+    return this.http.post('api/register/', user);
   }
 }
