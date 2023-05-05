@@ -18,13 +18,13 @@ export class ApiService {
     return this.http.get<Product[]>(url);
   }
 
-  getUsers(): Observable<User[]> {
-    const url = `${this.baseUrl}/users`;
-    return this.http.get<User[]>(url);
-  }
+  // getUsers(): Observable<User[]> {
+  //   const url = `${this.baseUrl}/users`;
+  //   return this.http.get<User[]>(url);
+  // }
 
   addToCart(userId: number, productId: number, quantity: number): Observable<any> {
-    const url = `${this.baseUrl}/users/${userId}/cart`;
+    const url = `${this.baseUrl}/cart`;
     const body = {
       productId,
       quantity
@@ -33,7 +33,7 @@ export class ApiService {
   }
 
   getCartItems(userId: number): Observable<CartItem[]> {
-    const url = `${this.baseUrl}/users/${userId}/cart`;
+    const url = `${this.baseUrl}/cart`;
     return this.http.get<CartItem[]>(url);
   }
   

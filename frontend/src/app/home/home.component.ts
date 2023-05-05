@@ -23,7 +23,7 @@ export class HomeComponent {
   constructor(private apiService: ApiService, private authService: AuthService) {}
 
   ngOnInit(): void {
-    this.currentUser = this.authService.getCurrentUser();
+    // this.currentUser = this.authService.getCurrentUser();
     this.getProducts();
   }
 
