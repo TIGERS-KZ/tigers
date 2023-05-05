@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from magazine.views import ProductListView, CategoryListView, ProductDetailView, CattListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('products/', ProductListView.as_view()),
+    path('category/', CategoryListView().as_view()),
+    path('category/<int:id>/', ProductDetailView().as_view()),
+    path('cart/<int:id>/', CattListView().as_view())
 ]

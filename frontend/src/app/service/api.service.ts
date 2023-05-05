@@ -9,7 +9,7 @@ import { CartItem } from '../models/cart';
   providedIn: 'root'
 })
 export class ApiService {
-  private baseUrl = '';
+  private baseUrl = 'http://127.0.0.1:8000';
 
   constructor(private http: HttpClient) { }
 
