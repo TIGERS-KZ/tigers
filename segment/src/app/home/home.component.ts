@@ -18,6 +18,8 @@ export class HomeComponent {
   productId: number = 0;
   quantity: number = 0;
 
+  category = null;
+
   constructor(private apiService: ApiService, private authService: AuthService) {}
 
   ngOnInit(): void {

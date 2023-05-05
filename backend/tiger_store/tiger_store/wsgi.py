@@ -1,5 +1,5 @@
 """
-WSGI config for final_back project.
+WSGI config for tiger_store project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'final_back.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tiger_store.settings')
 
 application = get_wsgi_application()

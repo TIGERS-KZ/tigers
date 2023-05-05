@@ -27,7 +27,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
 
     RouterModule.forRoot([
-      { path: 'home', component: HomeComponent },
+      { path: '', component: HomeComponent },
       { path: 'sign-up', component: SignupComponent },
       { path: 'sign-in', component: SigninComponent }
     ])

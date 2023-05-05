@@ -1,5 +1,5 @@
 """
-URL configuration for final_back project.
+URL configuration for tiger_store project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -17,14 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from final_back.segment.views import UserLoginView, UserRegistrationView
-
-
-from .views import UserRegistrationView, UserLoginView, TokenRefreshView
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/register/', UserRegistrationView.as_view(), name='user-registration'),
-    path('api/login/', UserLoginView.as_view(), name='user-login'),
-    path('api/token-refresh/', TokenRefreshView.as_view(), name='token-refresh'),
 ]
