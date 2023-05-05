@@ -39,8 +39,8 @@ export class HomeComponent {
       );
   }
 
-  addToCart(productId: number, quantity: number) {
-    this.apiService.addToCart(this.currentUser,productId, quantity);
+  addToCart(productId: number) {
+    this.apiService.addToCart(this.currentUser,productId);
   }
 
 }

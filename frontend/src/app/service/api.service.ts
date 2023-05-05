@@ -23,11 +23,10 @@ export class ApiService {
   //   return this.http.get<User[]>(url);
   // }
 
-  addToCart(userId: number, productId: number, quantity: number): Observable<any> {
+  addToCart(userId: number, productId: number): Observable<any> {
     const url = `${this.baseUrl}/cart`;
     const body = {
       productId,
-      quantity
     };
     return this.http.post(url, body);
   }

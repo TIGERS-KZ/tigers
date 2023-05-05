@@ -15,7 +15,7 @@ class Category(models.Model):#1
 class Brand(models.Model):#3
 
     name = models.CharField(max_length=255)
-    logo = models.ImageField(upload_to='', blank=True)
+    logo = models.CharField(max_length=255)
     description = models.TextField(blank=True)
    
     def __str__(self):
@@ -24,7 +24,7 @@ class Brand(models.Model):#3
 class Products(models.Model):#2
     name = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to='')
+    image = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=10, decimal_places=5)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=True, null=False)
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE, default=True, null=False)
@@ -38,5 +38,4 @@ class Cart(models.Model):#4
     product = models.ManyToManyField(Products)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return f"{self.user.username}'s cart"
+    
