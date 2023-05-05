@@ -3,6 +3,7 @@ import { ApiService } from '../service/api.service';
 import { CartItem } from '../models/cart';
 import { AuthService } from '../service/auth.service';
 import jwt_decode from 'jwt-decode';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-cart',
@@ -11,7 +12,7 @@ import jwt_decode from 'jwt-decode';
 })
 
 export class CartComponent implements OnInit {
-  cartItems: CartItem[] = [];
+  cartItems: Product[] = [];
 
   currentUser: any;
 
@@ -20,12 +21,12 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.currentUser = this.authService.getCurrentUser()
     
-    // this.getCartItems();
+    this.getCartItems();
   }
 
-  getCartItems(userId: number): void {
+  getCartItems(): void {
     // Call the API service to get the cart items of the user
-    this.apiService.getCartItems(userId).subscribe((cartItems: CartItem[]) => {
+    this.apiService.getCartItems().subscribe((cartItems: Product[]) => {
       this.cartItems = cartItems;
     });
   }
@@ -39,13 +40,7 @@ export class CartComponent implements OnInit {
   
   const userId = decodedToken.userId;
   
+    }
+  }
+  }
 
-    // Call the API service to remove the item from the user's cart
-    this.apiService.removeFromCart(userId,item.id).subscribe(() => {
-      // Remove the item from the cartItems array
-      const index = this.cartItems.indexOf(item);
-      this.cartItems.splice(index, 1);
-    });
-  }
-  }
-}

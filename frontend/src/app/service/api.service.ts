@@ -31,9 +31,9 @@ export class ApiService {
     return this.http.post(url, body);
   }
 
-  getCartItems(userId: number): Observable<CartItem[]> {
+  getCartItems(): Observable<Product[]> {
     const url = `${this.baseUrl}/cart`;
-    return this.http.get<CartItem[]>(url);
+    return this.http.get<Product[]>(url);
   }
   
   removeFromCart(userId: number, itemId: number): Observable<any> {

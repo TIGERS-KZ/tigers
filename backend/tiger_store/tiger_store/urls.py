@@ -23,5 +23,5 @@ urlpatterns = [
     path('products/', ProductListView.as_view()),
     path('category/', CategoryListView().as_view()),
     path('category/<int:id>/', ProductDetailView().as_view()),
-    path('cart/<int:id>/', CattListView().as_view())
+    path('cart/', CattListView().as_view())
 ]

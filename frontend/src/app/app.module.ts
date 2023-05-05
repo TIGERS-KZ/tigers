@@ -29,7 +29,8 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'sign-up', component: SignupComponent },
-      { path: 'sign-in', component: SigninComponent }
+      { path: 'sign-in', component: SigninComponent },
+      { path: 'cart', component: CartComponent}
     ])
   ],
 

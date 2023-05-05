@@ -21,7 +21,6 @@ class ProductDetailView(generics.CreateAPIView):
 class CattListView(generics.RetrieveUpdateDestroyAPIView): 
     queryset = Cart.objects.all() 
     serializer_class = CartSerializer
-    lookup_field = 'id'
 
 class CartView(APIView):
     def post(self, request, product_id):
